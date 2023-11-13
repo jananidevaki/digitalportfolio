@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    
+        body{
+        font-family:Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+    background-color:rgb(196, 191, 182);
+    
+        }
+        header{
+            background-color:rgb(71, 71, 66);height:150px;
+            color:white;
+            text-align: center;
+            padding:1px;
+            position: relative;
+
+        
+        }.header-con{
+            font-size: 20px;
+        }.profile-pic{
+            width:100px;
+            height:100px;
+            border-radius:75px;
+            object-fit: cover;
+            position:absolute;
+            top:40px;
+            left:300px;
+
+        }nav{
+            background-color: rgb(88, 99, 107);
+            color:white;
+            text-align:center;
+            font-size:30px;
+        }nav ul{
+            list-style-type:none;
+            padding:0;
+        }
+        nav ul li{
+            display: inline;
+            margin:0 20px;
+        }nav ul li a{
+            display: inline;
+            color:white;
+            text-decoration:none;
+        }
+        .sec-content{
+            background-color: rgb(235, 228, 220);
+            padding:2px;font-size: 13px;
+            margin:1.8px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0, 0.1)
+        }.download-button{
+            background-color:#222121;
+            color: #fff;
+            padding:0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display:inline;
+            margin-top:10px;
+            
+        }
+        .download-button:hover{
+            background-color: #555;
+        }footer{
+            text-align: center;
+            padding:1rem 0;
+            background-color: #333;
+            color:#fff;
+        }
+        
+    </style>
+    <body>
+          <header>
+            <div class="header"><div class="header-con">
+             <img src="C:\Users\ELCOT\Desktop\html\g5.jpg" class="profile-pic">
+             <h1>Janani</h1><p>passinate on learning<p> 
+            </div> </header>
+            <nav>
+      <ul>
+        <li><a href="#About" id="about">About</a></li>
+        <li><a href="#Education" id="edu">Education</a></li>
+        <li><a href="#Skills" id="skills">Skills</a></li>
+        <li><a href="#projects" id="projects">Projects</a></li>
+        <li><a href="#resume" id="resume">Resume</a></li>
+        
+      </ul>
+    </nav>
+    
+<section  id="about">
+    <div class="sec-content"><a name="About"></a>
+        <h2><u>ABOUT ME</u></h2>
+        <p>Hii Everyone! I am Janani I am a computer science student</p>
+    </div>
+</section>
+<section id="edu">
+    <div class="sec-content"><a name="Education"></a><h2><u>EDUCATION</u></h2>
+        <p>Degree:BCA &nbsp College:Gov.arts college</p>
+    </div>
+</section>
+<section id="skills" style="display: inline;">
+    <div class="sec-content">
+        <a name="Skills"></a> <h2><u>SKILLS</u></h2>
+        <ul type="circle"><li>c</li>
+        <li>c++</li>
+    <li>python</li></ul>
+    </div>
+</section>
+<section id="projects">
+    <div class="sec-content">
+        <a name="projects"></a><h2><u>projects</u></h2>
+        <ul>
+            <li><a href="#">project1</a></li>
+            <li><a href="#">project2</a></li>
+        </ul>
+        
+    </div>
+</section>
+<section id="resume">
+    <div class="sec-content">
+    <center>
+        <a name="resume"></a> <h2> Resume</h2>
+           <a href="resume.html" class="download-button">Download CV</a>
+
+        </center>
+    </div>
+</section>
+        
+<script>
+    //smooth scrolling on  when cllickin gon avigation links 
+    document.querySelectorAll('a[href="#"]').forEach(anchor=>
+    {
+        anchor.addEventListener('click',function(e)
+        {
+            e.preventDefault();
+            const targetld=this.getAttribute('href').substring(1);
+            const targetElement =document.getelementByld(targetld);
+            if(targetElement){
+                window.scrollTo({
+                    top:
+                    targetElement.offsetTop,behavior:'smooth'
+                });
+                
+            }
+        });
+    });
+</script>
+
+
+      </body>
+
+</html>
